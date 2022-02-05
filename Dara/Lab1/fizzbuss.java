@@ -1,3 +1,4 @@
+package Dara.Lab1;
 public class fizzbuss {
     public static void main(String[] args) {
         // devisible by 5 fizz, 3 buzz, both fizzbuzz

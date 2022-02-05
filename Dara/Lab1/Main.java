@@ -1,4 +1,4 @@
-package com.test;
+package Dara.Lab1;
 
 public class Main {
 
