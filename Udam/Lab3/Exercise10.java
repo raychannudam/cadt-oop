@@ -18,13 +18,11 @@ public class Exercise10 {
         for(int i=0; i<arr.length; i++)  sum = sum + arr[i];
         return sum / arr.length;
     }
-
     public static int FindMax(int arr[]){
         int max = 0;
         for(int i=0; i<arr.length; i++) max = Math.max(max, arr[i]);
         return max;
     }
-
     public static void printAll(int arr[]){
         System.out.println("Display all: ");
         for(int i=0; i<arr.length; i++) System.out.println(arr[i]);
