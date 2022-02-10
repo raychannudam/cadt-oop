@@ -1,3 +1,4 @@
+package Dara.Lab3;
 public class ex14 {
     static void helloForLoo(){
         for(int i=1;i<=10;i++){

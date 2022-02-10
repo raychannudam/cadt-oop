@@ -1,4 +1,4 @@
-
+package Dara.Lab2;
 public class ex11 {
     static void multiplyNumber(int n){
         for(int i=1; i<=10;i++){

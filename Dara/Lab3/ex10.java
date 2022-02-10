@@ -1,3 +1,4 @@
+package Dara.Lab3;
 public class ex10 {
 
     static double findAvg(int number[]) {

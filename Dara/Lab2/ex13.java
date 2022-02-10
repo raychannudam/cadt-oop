@@ -1,4 +1,4 @@
-
+package Dara.Lab2;
 public class ex13 {
     static double sum(double a, int b){
         return a+b;

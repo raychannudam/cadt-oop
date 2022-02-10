@@ -1,3 +1,4 @@
+package Dara.Lab3;
 public class ex5 {
     static Boolean isPrime(int n) {
         byte flag=0;

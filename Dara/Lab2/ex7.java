@@ -1,4 +1,4 @@
-
+package Dara.Lab2;
 public class ex7 {
     static int add(int a, int b){
         return a+b;

@@ -1,4 +1,4 @@
-
+package Dara.Lab3;
 public class ex3 {
     static void patternA(int n) {
         for (int i = 1; i <= n; i++) {

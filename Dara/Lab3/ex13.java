@@ -1,3 +1,4 @@
+package Dara.Lab3;
 import java.util.Scanner;
 
 public class ex13 {
