@@ -13,7 +13,7 @@ public class Exercise12 {
         int[][] arr = new int[row][column];
         for(int i=0; i<row; i++){
             for(int j=0; j<column; j++){
-                double rand = Math.random()*100;
+                double rand = Math.random()*90 + 10;
                 int randInt = (int)rand;
                 arr[i][j] = randInt;
             }
