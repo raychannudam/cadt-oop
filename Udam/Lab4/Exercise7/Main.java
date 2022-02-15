@@ -28,21 +28,21 @@ public class Main {
     public static void fillData(Student[] studentList){
         Scanner ac = new Scanner(System.in);
         int counter = 1;
-        for(Student student: studentList){
+        for(int i=0; i<studentList.length; i++){
             System.out.println("**Student "+(counter)+" **");
-            student = new Student();
+            studentList[i] = new Student();
             ac = new Scanner(System.in);
             System.out.print("Input name of student ");
             String name = ac.nextLine();
-            student.set_name(name);
+            studentList[i].set_name(name);
             System.out.print("Input department: ");
             String department = ac.nextLine();
-            student.set_department(department);
+            studentList[i].set_department(department);
             System.out.print("Input generation: ");
             String generation = ac.nextLine();
-            student.setGeneration(generation);
-            String id = "CADT-" + student.get_name().charAt(counter) + Math.random()*90+10;
-            student.set_id(id);
+            studentList[i].setGeneration(generation);
+            String id = "CADT-" + studentList[i].get_name().charAt(counter) + Math.random()*90+10;
+            studentList[i].set_id(id);
             counter++;
         }
         ac.close();
