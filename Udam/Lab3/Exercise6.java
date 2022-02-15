@@ -18,5 +18,6 @@ public class Exercise6 {
                 break;
             }
         }
+        ac.close();
     }
 }
