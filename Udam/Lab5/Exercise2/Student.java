@@ -43,3 +43,5 @@ public class Student extends Human{
         System.out.println("SKILL: "+this.skill);
     }
 }
+
+
