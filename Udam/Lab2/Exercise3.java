@@ -8,10 +8,10 @@ public class Exercise3 {
         int age;
         System.out.print("Input age: ");
         age = sc.nextInt();
-        if (age <= 0){
+        if (age <= 0) {
             System.out.println("The age cannot be less then 0");
-        }else{
-            System.out.println("your age is " + age+ " years old");
+        } else {
+            System.out.println("your age is " + age + " years old");
         }
     }
 }

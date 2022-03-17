@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         DoAble doAbleList[] = new DoAble[10];
         Scanner ac = new Scanner(System.in);
-        for(DoAble doAble: doAbleList){
+        for (DoAble doAble : doAbleList) {
             ac = new Scanner(System.in);
             System.out.print("Name: ");
             String name = ac.nextLine();

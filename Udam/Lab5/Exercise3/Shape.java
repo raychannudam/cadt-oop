@@ -1,10 +1,11 @@
 package Udam.Lab5.Exercise3;
 
 public class Shape {
-    public double getArea(){
+    public double getArea() {
         return 0.0d;
     }
-    public double getPerimeter(){
+
+    public double getPerimeter() {
         return 0.0d;
     }
 }

@@ -21,5 +21,5 @@ public class Animal implements Walkable {
     public void Backward() {
         System.out.println("Animal walks backward");
     }
-    
+
 }

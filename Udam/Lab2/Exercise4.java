@@ -8,17 +8,17 @@ public class Exercise4 {
         int score;
         System.out.print("Input your score: ");
         score = sc.nextInt();
-        if (score >= 0 && score <= 54){
+        if (score >= 0 && score <= 54) {
             System.out.println("F");
-        }else if(score >= 55 && score <= 73){
+        } else if (score >= 55 && score <= 73) {
             System.out.println("D");
-        }else if(score >= 74 && score <= 79){
+        } else if (score >= 74 && score <= 79) {
             System.out.println("C");
-        }else if(score >= 80 && score <=94){
+        } else if (score >= 80 && score <= 94) {
             System.out.println("B");
-        }else if(score >= 95 && score <= 100){
+        } else if (score >= 95 && score <= 100) {
             System.out.println("A");
-        }else{
+        } else {
             System.out.println("Invalid");
         }
     }

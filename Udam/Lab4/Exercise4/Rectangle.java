@@ -5,28 +5,33 @@ public class Rectangle {
     private Double _height;
     private String _color;
 
-    public Double getWidth(){
+    public Double getWidth() {
         return this._width;
     }
-    public Double height(){
+
+    public Double height() {
         return this._height;
     }
-    public String getColor(){
+
+    public String getColor() {
         return this._color;
     }
 
-    public Rectangle(){}
-    public Rectangle(Double width, Double height, String color){
+    public Rectangle() {
+    }
+
+    public Rectangle(Double width, Double height, String color) {
         this._width = width;
         this._height = height;
         this._color = color;
     }
-    public Rectangle(Double width, Double height){
+
+    public Rectangle(Double width, Double height) {
         this._width = width;
-        this._height = height;    
+        this._height = height;
     }
 
-    public Double getArea(){
-        return this._height*this._width;
+    public Double getArea() {
+        return this._height * this._width;
     }
 }

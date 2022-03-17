@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Computer[] computerList = new Computer[2];
         Scanner ac = new Scanner(System.in);
-        for(int i=0; i<computerList.length; i++){
+        for (int i = 0; i < computerList.length; i++) {
             ac = new Scanner(System.in);
             System.out.println("------------");
             System.out.print("BRAND: ");

@@ -1,4 +1,5 @@
 package Dara.Lab2;
+
 import java.util.Scanner;
 
 public class ex5 {
@@ -14,6 +15,6 @@ public class ex5 {
         System.out
                 .println((gender.equalsIgnoreCase("female") && status.equalsIgnoreCase("single")) ? "Hello Miss." + name
                         : (gender.equalsIgnoreCase("female") && status.equalsIgnoreCase("married") ? "Hello Ms." + name
-                                : "Hello Mr." + name));
+                        : "Hello Mr." + name));
     }
 }

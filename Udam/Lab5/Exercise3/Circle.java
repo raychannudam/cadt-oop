@@ -11,7 +11,7 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    
+
     public Circle() {
     }
 
@@ -19,15 +19,15 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public double getArea(){
+    public double getArea() {
         return (3.14 * Math.pow(radius, 2));
     }
 
-    public double getPerimeter(){
-        return (2*3.14*radius);
+    public double getPerimeter() {
+        return (2 * 3.14 * radius);
     }
 
-    public String toString(){
+    public String toString() {
         return "The circle has radius = " + String.valueOf(radius);
     }
 }

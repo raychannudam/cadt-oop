@@ -19,9 +19,9 @@ public class Exercise4 {
         shapes[3] = rt;
         shapes[4] = c3;
 
-        for(Shape shape: shapes){
+        for (Shape shape : shapes) {
             System.out.println(shape);
         }
-        
+
     }
 }

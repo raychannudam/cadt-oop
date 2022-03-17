@@ -2,8 +2,8 @@ package Udam.Lab6.Exercise8;
 
 public class Tiger implements MoveAble {
     private String color;
-    private Double weight; 
-    
+    private Double weight;
+
     public String getColor() {
         return color;
     }
@@ -45,8 +45,8 @@ public class Tiger implements MoveAble {
         System.out.println("Cat moves down");
     }
 
-    public String toString(){
-        return ("Color: "+this.color+", Weight: "+this.weight);
+    public String toString() {
+        return ("Color: " + this.color + ", Weight: " + this.weight);
     }
-    
+
 }

@@ -6,10 +6,11 @@ import Udam.Lab6.Exercise3.Rectangle;
 
 public class MyShapeOp {
     public MyShape[] shapeList = new MyShape[10];
-    int index=0;
-    public MyShape addShape(double width, double height){
-        for(int i=0; i<shapeList.length; i++){
-            if(shapeList[i] == null){
+    int index = 0;
+
+    public MyShape addShape(double width, double height) {
+        for (int i = 0; i < shapeList.length; i++) {
+            if (shapeList[i] == null) {
                 index = i;
                 break;
             }
@@ -18,9 +19,9 @@ public class MyShapeOp {
         return shapeList[index];
     }
 
-    public MyShape addShape(double radius){
-        for(int i=0; i<shapeList.length; i++){
-            if(shapeList[i] == null){
+    public MyShape addShape(double radius) {
+        for (int i = 0; i < shapeList.length; i++) {
+            if (shapeList[i] == null) {
                 index = i;
                 break;
             }
@@ -29,10 +30,10 @@ public class MyShapeOp {
         return shapeList[index];
     }
 
-    public MyShape searchShape(double area){
-        for(MyShape myshape: shapeList){
-            if(myshape != null){
-                if(myshape.getArea() == area){
+    public MyShape searchShape(double area) {
+        for (MyShape myshape : shapeList) {
+            if (myshape != null) {
+                if (myshape.getArea() == area) {
                     return myshape;
                 }
             }
@@ -40,8 +41,8 @@ public class MyShapeOp {
         return null;
     }
 
-    public void printAll(){
-        for(MyShape myshape: shapeList){
+    public void printAll() {
+        for (MyShape myshape : shapeList) {
             System.out.println(myshape);
         }
     }

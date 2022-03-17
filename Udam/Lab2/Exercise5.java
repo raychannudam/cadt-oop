@@ -12,13 +12,13 @@ public class Exercise5 {
         System.out.print("Input status: ");
         String status = ac.nextLine();
 
-        if(gender.equals("F") || gender.equals("f")){
-            if(status.equals("single")){
+        if (gender.equals("F") || gender.equals("f")) {
+            if (status.equals("single")) {
                 System.out.println("Hello Miss. " + name);
-            }else{
+            } else {
                 System.out.println("Hello Ms. " + name);
-            }   
-        }else{
+            }
+        } else {
             System.out.println("Hello Mr. " + name);
         }
     }

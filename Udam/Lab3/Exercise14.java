@@ -7,23 +7,23 @@ public class Exercise14 {
         helloDoWhileLoop();
     }
 
-    public static void helloForLoop(){
-        for(int i=0; i<10; i++) System.out.println("helloForLoop");
+    public static void helloForLoop() {
+        for (int i = 0; i < 10; i++) System.out.println("helloForLoop");
     }
 
-    public static void helloWhileLoop(){
-        int i=0;
-        while(i<10){
+    public static void helloWhileLoop() {
+        int i = 0;
+        while (i < 10) {
             System.out.println("helloWhileLoop");
             i++;
         }
     }
-    
-    public static void helloDoWhileLoop(){
-        int i=0;
-        do{
+
+    public static void helloDoWhileLoop() {
+        int i = 0;
+        do {
             System.out.println("helloDoWhileLoop");
             i++;
-        }while(i<10);
+        } while (i < 10);
     }
 }

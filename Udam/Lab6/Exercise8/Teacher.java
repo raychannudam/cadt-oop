@@ -3,7 +3,7 @@ package Udam.Lab6.Exercise8;
 public class Teacher extends Human implements MoveAble {
     private Double salary;
     private String schoolName;
-    
+
     public Double getSalary() {
         return salary;
     }
@@ -31,7 +31,8 @@ public class Teacher extends Human implements MoveAble {
         this.schoolName = schoolName;
     }
 
-    public Teacher(){}
+    public Teacher() {
+    }
 
     @Override
     public void moveLeft() {
@@ -55,12 +56,12 @@ public class Teacher extends Human implements MoveAble {
 
     @Override
     public void getResponsible() {
-       System.out.println("Teach");
-        
+        System.out.println("Teach");
+
     }
 
-    public String toString(){
-        return ("Name: "+super.get_name());
+    public String toString() {
+        return ("Name: " + super.get_name());
     }
-    
+
 }

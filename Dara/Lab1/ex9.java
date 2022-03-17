@@ -1,4 +1,5 @@
 package Dara.Lab1;
+
 import java.util.Scanner;
 
 public class ex9 {
@@ -12,7 +13,7 @@ public class ex9 {
         String address = input.nextLine();
         input.close();
 
-        System.out.println("Fullname: " + fullname + 
-        "\n Age: " + age + "\n Address: " + address);
+        System.out.println("Fullname: " + fullname +
+                "\n Age: " + age + "\n Address: " + address);
     }
 }

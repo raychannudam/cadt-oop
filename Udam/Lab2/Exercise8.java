@@ -7,7 +7,7 @@ public class Exercise8 {
         greeting("Chann Udam");
     }
 
-    public static void greeting(String name){
+    public static void greeting(String name) {
         System.out.println("Hello " + name);
     }
 }

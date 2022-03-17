@@ -2,7 +2,7 @@ package Udam.Lab5.Exercise1;
 
 public class Main {
     public static void main(String[] args) {
-        Animal a1  = new Animal();
+        Animal a1 = new Animal();
         a1.cry();
         a1.walk();
 
@@ -10,7 +10,7 @@ public class Main {
         a2.cry();
         a2.walk();
 
-        Animal a3  = new Dog();
+        Animal a3 = new Dog();
         a3.cry();
         a3.walk();
 

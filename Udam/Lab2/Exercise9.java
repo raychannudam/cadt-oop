@@ -5,8 +5,8 @@ public class Exercise9 {
         System.out.println(isNegative(-2));
     }
 
-    public static boolean isNegative(int number){
-        if(number<0){
+    public static boolean isNegative(int number) {
+        if (number < 0) {
             return true;
         }
         return false;

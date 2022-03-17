@@ -1,4 +1,5 @@
 package Dara.Lab3;
+
 import java.util.Scanner;
 
 public class ex12 {
@@ -13,13 +14,13 @@ public class ex12 {
         int[][] arr = new int[row][col];
 
         for (int i = 0; i < row; i++) {
-            for(int j=0; j<col;j++){
+            for (int j = 0; j < col; j++) {
                 arr[i][j] = (int) (Math.random() * 100 + 1);
             }
         }
 
-        for(int i=0;i<row;i++){
-            for(byte j=0; j<col; j++){
+        for (int i = 0; i < row; i++) {
+            for (byte j = 0; j < col; j++) {
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();

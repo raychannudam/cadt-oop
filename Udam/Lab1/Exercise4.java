@@ -15,7 +15,7 @@ public class Exercise4 {
 
         System.out.println("After swap");
         System.out.println("a : " + a + ", b: " + b);
-        
+
     }
 }
 

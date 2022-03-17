@@ -7,29 +7,29 @@ public class Main {
         Student[] studentList = new Student[3];
         fillData(studentList);
         printAll(studentList);
-        if(searchStudentById(studentList, "id")!=null){
+        if (searchStudentById(studentList, "id") != null) {
             System.out.println("ID found");
         }
-        if(searchStudentByName(studentList, "name")!=null){
+        if (searchStudentByName(studentList, "name") != null) {
             System.out.println("Name found");
         }
         Student[] stdLst = sortByName(studentList);
-        for(Student lst: stdLst){
+        for (Student lst : stdLst) {
             System.out.print(lst.get_name());
         }
         System.out.println();
         stdLst = sortById(studentList);
-        for(Student lst: stdLst){
+        for (Student lst : stdLst) {
             System.out.print(lst.get_name());
         }
         System.out.println();
     }
 
-    public static void fillData(Student[] studentList){
+    public static void fillData(Student[] studentList) {
         Scanner ac = new Scanner(System.in);
         int counter = 1;
-        for(int i=0; i<studentList.length; i++){
-            System.out.println("**Student "+(counter)+" **");
+        for (int i = 0; i < studentList.length; i++) {
+            System.out.println("**Student " + (counter) + " **");
             studentList[i] = new Student();
             ac = new Scanner(System.in);
             System.out.print("Input name of student ");
@@ -41,41 +41,41 @@ public class Main {
             System.out.print("Input generation: ");
             String generation = ac.nextLine();
             studentList[i].setGeneration(generation);
-            String id = "CADT-" + studentList[i].get_name().charAt(counter) + Math.random()*90+10;
+            String id = "CADT-" + studentList[i].get_name().charAt(counter) + Math.random() * 90 + 10;
             studentList[i].set_id(id);
             counter++;
         }
         ac.close();
     }
 
-    public static void printAll(Student[] studentList){
-        for(Student student: studentList){
+    public static void printAll(Student[] studentList) {
+        for (Student student : studentList) {
             student.printInfo();
         }
     }
 
-    public static Student searchStudentByName(Student[] studentList, String name){
-        for(Student student: studentList){
-            if(student.get_name().equals(name)){
+    public static Student searchStudentByName(Student[] studentList, String name) {
+        for (Student student : studentList) {
+            if (student.get_name().equals(name)) {
                 return student;
             }
         }
         return null;
     }
 
-    public static Student searchStudentById(Student[] studentList, String id){
-        for(Student student: studentList){
-            if(student.get_id().equals(id)){
+    public static Student searchStudentById(Student[] studentList, String id) {
+        for (Student student : studentList) {
+            if (student.get_id().equals(id)) {
                 return student;
             }
         }
         return null;
     }
 
-    public static Student[] sortByName(Student[] studentList){
-        for(int i=0; i<studentList.length; i++){
-            for(int j=i+1; j<studentList.length; j++){
-                if(studentList[i].get_name().compareTo(studentList[j].get_name()) > 0){
+    public static Student[] sortByName(Student[] studentList) {
+        for (int i = 0; i < studentList.length; i++) {
+            for (int j = i + 1; j < studentList.length; j++) {
+                if (studentList[i].get_name().compareTo(studentList[j].get_name()) > 0) {
                     Student temp = studentList[i];
                     studentList[i] = studentList[j];
                     studentList[j] = temp;
@@ -85,10 +85,10 @@ public class Main {
         return studentList;
     }
 
-    public static Student[] sortById(Student[] studentList){
-        for(int i=0; i<studentList.length; i++){
-            for(int j=i+1; j<studentList.length; j++){
-                if(studentList[i].get_id().compareTo(studentList[j].get_id()) > 0){
+    public static Student[] sortById(Student[] studentList) {
+        for (int i = 0; i < studentList.length; i++) {
+            for (int j = i + 1; j < studentList.length; j++) {
+                if (studentList[i].get_id().compareTo(studentList[j].get_id()) > 0) {
                     Student temp = studentList[i];
                     studentList[i] = studentList[j];
                     studentList[j] = temp;

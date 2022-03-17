@@ -1,4 +1,5 @@
 package Dara.Lab1;
+
 import java.util.Scanner;
 
 public class ex7 {
@@ -10,6 +11,6 @@ public class ex7 {
         System.out.print("Enter value for second number: ");
         b = input.nextFloat();
         input.close();
-        System.out.println(a+b);
+        System.out.println(a + b);
     }
 }

@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Dog[] dogs = new Dog[5];
         Scanner ac = new Scanner(System.in);
-        for(int i=0; i<dogs.length; i++){
+        for (int i = 0; i < dogs.length; i++) {
             ac = new Scanner(System.in);
             System.out.println("-----------");
             System.out.print("NAME: ");
@@ -17,7 +17,7 @@ public class Main {
 
         }
         ac.close();
-        for(Dog dog: dogs){
+        for (Dog dog : dogs) {
             dog.printInfo();
         }
     }

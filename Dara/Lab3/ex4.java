@@ -1,4 +1,5 @@
 package Dara.Lab3;
+
 public class ex4 {
     static void patternA(int n) {
         for (int i = 1; i <= n; i++) {
@@ -37,7 +38,7 @@ public class ex4 {
             for (j = 1; j < i; j++) {
                 System.out.print(" ");
             }
-            for (int k = 1; k <n-i+2; k++) {
+            for (int k = 1; k < n - i + 2; k++) {
                 System.out.print(k);
             }
             System.out.println();

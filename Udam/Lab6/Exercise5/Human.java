@@ -25,5 +25,5 @@ public class Human implements Walkable {
     public Human() {
     }
 
-    
+
 }

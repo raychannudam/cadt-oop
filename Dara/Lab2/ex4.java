@@ -1,4 +1,5 @@
 package Dara.Lab2;
+
 import java.util.Scanner;
 
 public class ex4 {
@@ -8,9 +9,9 @@ public class ex4 {
         scanner.close();
         char result = (score >= 95 && score <= 100) ? 'A'
                 : (score >= 80 && score <= 94)
-                        ? 'B': (score >= 74 && score <= 79) ? 
-                        'C' : (score >= 55 && score <= 73) ? 
-                        'D' : 'F';
+                ? 'B' : (score >= 74 && score <= 79) ?
+                'C' : (score >= 55 && score <= 73) ?
+                'D' : 'F';
         System.out.println(result);
     }
 }

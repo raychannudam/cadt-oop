@@ -11,15 +11,15 @@ public class Exercise12 {
         int column = ac.nextInt();
 
         int[][] arr = new int[row][column];
-        for(int i=0; i<row; i++){
-            for(int j=0; j<column; j++){
-                double rand = Math.random()*90 + 10;
-                int randInt = (int)rand;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                double rand = Math.random() * 90 + 10;
+                int randInt = (int) rand;
                 arr[i][j] = randInt;
             }
         }
-        for(int i=0; i<row; i++){
-            for(int j=0; j<column; j++) System.out.print(arr[i][j]+ " ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) System.out.print(arr[i][j] + " ");
             System.out.println();
         }
     }

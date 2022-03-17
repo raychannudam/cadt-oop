@@ -8,22 +8,22 @@ public class HumanOp {
     public Human humanList[] = new Human[10];
     int index = 0;
 
-    public Student addHuman(String name, String age, String nationality, String schoolName, String skill){
-        for(int i=0; i<humanList.length; i++){
-            if(humanList[i] == null){
+    public Student addHuman(String name, String age, String nationality, String schoolName, String skill) {
+        for (int i = 0; i < humanList.length; i++) {
+            if (humanList[i] == null) {
                 index = i;
                 break;
             }
         }
         humanList[index] = null;
-        Student std = new Student(name, age, nationality, schoolName, skill); 
+        Student std = new Student(name, age, nationality, schoolName, skill);
         humanList[index] = std;
         return std;
     }
 
-    public Teacher addHuman(String name, String age, String nationality, double salary, String schoolName){
-        for(int i=0; i<humanList.length; i++){
-            if(humanList[i] == null){
+    public Teacher addHuman(String name, String age, String nationality, double salary, String schoolName) {
+        for (int i = 0; i < humanList.length; i++) {
+            if (humanList[i] == null) {
                 index = i;
                 break;
             }
@@ -34,10 +34,10 @@ public class HumanOp {
         return tch;
     }
 
-    public Human searchByName(String name){
-        for(int i=0; i<humanList.length; i++){
-            if(humanList[i] != null){
-                if(humanList[i].get_name().equals(name)){
+    public Human searchByName(String name) {
+        for (int i = 0; i < humanList.length; i++) {
+            if (humanList[i] != null) {
+                if (humanList[i].get_name().equals(name)) {
                     return humanList[i];
                 }
             }
@@ -45,9 +45,9 @@ public class HumanOp {
         return null;
     }
 
-    public Human editByName(String name, String age, String nationality, String schoolName, String skill){
-        for(int i=0; i<humanList.length; i++){
-            if(humanList[i].get_name().equals(name)){
+    public Human editByName(String name, String age, String nationality, String schoolName, String skill) {
+        for (int i = 0; i < humanList.length; i++) {
+            if (humanList[i].get_name().equals(name)) {
                 humanList[i] = new Student(name, age, nationality, schoolName, skill);
                 return humanList[i];
             }
@@ -55,9 +55,9 @@ public class HumanOp {
         return null;
     }
 
-    public Human editByName(String name, String age, String nationality, double salary, String schoolName){
-        for(int i=0; i<humanList.length; i++){
-            if(humanList[i].get_name().equals(name)){
+    public Human editByName(String name, String age, String nationality, double salary, String schoolName) {
+        for (int i = 0; i < humanList.length; i++) {
+            if (humanList[i].get_name().equals(name)) {
                 humanList[i] = new Teacher(name, age, nationality, salary, schoolName);
                 return humanList[i];
             }
@@ -65,8 +65,8 @@ public class HumanOp {
         return null;
     }
 
-    public void printAll(){
-        for(Human human: humanList){
+    public void printAll() {
+        for (Human human : humanList) {
             System.out.println(human);
         }
     }
